@@ -2,13 +2,14 @@ Disc-Cache-iOS
 ==============
 
 
-write this to initalize your custom cache (best to write this on AppDelegate.m)
+write this to initalize your custom cache (best to write this on AppDelegate.m) 
 
-#import "StorageCache.h"
+	#import "StorageCache.h"
+
 
 ------------------------------------------------------------------
-[[NSURLCache sharedURLCache] removeAllCachedResponses];
-    
+
+    [[NSURLCache sharedURLCache] removeAllCachedResponses];
     NSArray *paths =
     NSSearchPathForDirectoriesInDomains(
                                         NSCachesDirectory, NSUserDomainMask, YES);
@@ -25,4 +26,3 @@ write this to initalize your custom cache (best to write this on AppDelegate.m)
     --------------------------------------------------------------
 
 
-    
